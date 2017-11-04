@@ -1,0 +1,43 @@
+// <a href="" class="button--hover-angle">
+//         <span class="button__background"></span>
+//         <div class="button__copy">Contact us</div>
+// </a>
+
+.button__background {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  bottom: 1px;
+  right: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+}
+
+.button {
+  &--hover-angle {
+    &:after {
+        opacity: 0;
+        display: block;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        transition: all .5s;
+        height: 100%;
+        top: 0;
+        left: -20px;
+        right: -20px;
+        bottom: -1px;
+        transform-origin: 50% 0;
+        transform: skewX(-11.5deg) scaleX(0);
+        background: #000;
+    }
+
+    &:hover {
+      &:after {
+        opacity: 1;
+        transform: skewX(-11.5deg) scaleX(1);
+      }
+    }
+  }
+}

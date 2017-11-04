@@ -1,0 +1,1 @@
+{"version":3,"sources":["_grid.scss"],"names":[],"mappings":"AAAA;EACE,kHAAkH;CACnH","file":"_grid.scss","sourcesContent":["@function grid-span($span, $location, $grid: false, $gutter: false, $gutter-style: false) {\n  @return column-span($span, $location, $grid, $gutter, $gutter-style) + gutter-span($gutter, $grid, $gutter-style);\n}"]}

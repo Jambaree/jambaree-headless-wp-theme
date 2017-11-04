@@ -1,0 +1,33 @@
+.bg-video {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: -1;
+  opacity: .4;
+}
+
+.background-color {
+  background-color: $purple-darker;
+  @extend .clearfix;
+  clear: both;
+}
+
+.background-gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9b9b9b+0,27275f+100&0+0,1+100 */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(155,155,155,0)),to(rgba(39,39,95,1)));
+  background: linear-gradient(to bottom, rgba(155,155,155,0) 0%,rgba(39,39,95,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009b9b9b', endColorstr='#27275f',GradientType=0 ); /* IE6-9 */
+}
+
+@media (max-width: $bp-sm) {
+  .touchevents {
+    .bg-video {
+      display: none;
+    }
+  }
+}
+
+/* @include breakpoint($bp-sm + 1) {*/
+/**/
+/* }*/

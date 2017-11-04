@@ -1,0 +1,55 @@
+/*!
+IMPORTANT!!!!
+If you edit the .css file instead of the .scss files, ALL ORGANIZATION WILL BE LOST!
+Please open and edit the .scss files in the /sass/ folder. Installing the WP-SCSS plugin in wordpress will allow you to edit .scss files on the server and have them automatically compile to css.
+
+ALSO IMPORTANT!
+If you do the above, all vendor prefixes will be lost and the site will lose most of its cross browser compatibility. Use atom autoprefixer or https://autoprefixer.github.io/ to update the vendor prefixes for EVERY .scss file, not just the one you've edited.
+*/
+
+/*!
+Theme Name: Tyler Theme
+Theme URI: http://barevancouver.com
+Author: Tyler Barnes
+Author URI: http://tylerbarnes.ca
+Description: A simple WP starter theme using singularitygs
+*/
+
+
+
+// Import Vendor CSS
+@import 'vendor/breakpoint',
+				'vendor/singularitygs',
+				// 'vendor/normalize',
+				'vendor/normalize-new',
+				'vendor/hamburgers/hamburgers',
+				'vendor/spinner';
+
+// Import Base
+@import 'base/colours',
+				'base/variables',
+				'base/base',
+				'base/typography',
+				'modules/legal',
+				'modules/main-logo',
+				'modules/menu-main-mobile',
+				'modules/menu-main-desktop',
+				'modules/menu-main-button',
+				'modules/header',
+				'modules/bg-overlay';
+
+
+
+// Import Layouts
+
+
+// Import Modules
+@import 'modules/buttons/button';
+
+// Import States
+@import 'state/state';
+
+// Template specific css
+
+
+// Import Overrides
