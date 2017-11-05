@@ -1,21 +1,22 @@
-// <a href="" class="button--hover-angle">
+// <a href="" class="button--angle-hover">
 //         <span class="button__background"></span>
 //         <div class="button__copy">Contact us</div>
 // </a>
 
-.button__background {
-  position: absolute;
-  z-index: -2;
-  top: 0;
-  bottom: 1px;
-  right: 0;
-  left: 0;
-  display: block;
-  height: 100%;
-}
-
 .button {
-  &--hover-angle {
+
+  &__background {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    bottom: 1px;
+    right: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+  }
+
+  &--angle-hover {
     &:after {
         opacity: 0;
         display: block;

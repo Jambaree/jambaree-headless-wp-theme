@@ -8,49 +8,55 @@ If you do the above, all vendor prefixes will be lost and the site will lose mos
 */
 
 /*!
-Theme Name: Tyler Theme
-Theme URI: http://barevancouver.com
+Theme Name: Bare Naked
+Theme URI: https://gitlab.com/TylerB/bare-naked-theme
 Author: Tyler Barnes
 Author URI: http://tylerbarnes.ca
-Description: A simple WP starter theme using singularitygs
+Description: A simple WP starter theme
 */
 
 
 //
-// // Import Vendor CSS
-@import "susy";
-// @import 'vendor/breakpoint',
-// 				'vendor/singularitygs',
-// 				// 'vendor/normalize',
-// 				'vendor/normalize-new',
-// 				'vendor/hamburgers/hamburgers',
-// 				'vendor/spinner';
+// Import Vendor
 //
-// // Import Base
-// @import 'base/colours',
-// 				'base/variables',
-// 				'base/base',
-// 				'base/typography',
-// 				'modules/legal',
-// 				'modules/main-logo',
-// 				'modules/menu-main-mobile',
-// 				'modules/menu-main-desktop',
-// 				'modules/menu-main-button',
-// 				'modules/header',
-// 				'modules/bg-overlay';
+@import "susy",
+				'vendor/normalize-new',
+				'vendor/hamburgers/hamburgers';
+
+
 //
+// Import Base
 //
+@import 'base/configuration',
+				'base/typography',
+        'base/accessibility',
+        'base/extends',
+        'base/grid';
+
+
 //
-// // Import Layouts
+// Import Modules
 //
+@import 'modules/legal',
+'modules/main-logo',
+'modules/menu-main-mobile',
+'modules/menu-main-button',
+'modules/header';
+
+
 //
-// // Import Modules
-// @import 'modules/buttons/button';
+// Import Layouts
 //
-// // Import States
-// @import 'state/state';
+// @import 'layout/';
+
+
 //
-// // Template specific css
+// Import States
 //
+// @import 'state/';
+
+
 //
-// // Import Overrides
+// Template specific css
+//
+// @import 'theme/';

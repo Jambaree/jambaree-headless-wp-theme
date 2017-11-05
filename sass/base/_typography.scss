@@ -12,32 +12,13 @@
 	color: $headings-colour;
 }
 
-// .nonpareille         { font-size: 8px;  }
-// .minion              { font-size: 9px;  }
-// .petit               { font-size: 11px; }
-// .bourgeois           { font-size: 12px; }
-// .long-primer         { font-size: 13px; }
-// .small-pica          { font-size: 15px; }
-// .pica                { font-size: 16px; }
-// .english-light       { font-size: 18px; }
-// .english             { font-size: 19px; }
-// .columbian           { font-size: 21px; }
-// .great-primer        { font-size: 24px; }
-// .double-small-pica   { font-size: 28px; }
-// .double-pica         { font-size: 32px; }
-// .double-pica-plus    { font-size: 36px; }
-// .double-great-primer { font-size: 48px; }
-// .canon               { font-size: 62px; }
-// .five-line-pica      { font-size: 80px; }
-// .inch                { font-size: 96px; }
-
 body {
 	color: $body-colour;
 	@extend .main-font;
 }
 
 a, a:visited, a:active {
-	color: white;
+	color: $anchor-default;
 	text-decoration: none;
 }
 
@@ -49,220 +30,14 @@ a, a:visited, a:active {
 	@extend .main-font;
 }
 
-.h1, .h2, .h4, .nav-text, .footer-nav-text, .dropdown-menu {
-	font-weight: 600;
-}
-
-.h3, .h5 {
-	font-weight: 500;
-}
-
-.button {
-	font-style: italic;
-}
-
-// .text-legalese {
-// 	font-weight: 400;
-// }
-//
-// .text-legalese,
-// .button {
-// }
-//
-// .button {
-// }
-//
-// .p {
-// }
-
+//to account for paragraph text within wysiwyg where you can't add the class of .p
+// it can be added to a containing div <div class='p'><?php get_field('wysiwyg')</div>
 .p p {
 	font-size: inherit;
 	line-height: inherit;
 	margin-bottom: inherit;
 }
 
-.footer-nav-text {
-	@extend .heading-font;
-}
-
-.social-media-icons {
-}
-
-.main-navigation-menu {
-	li {
-		@extend .p;
-
-		a, a:visited, a:link, a:active {
-		}
-	}
-}
-
-
-
 .h1 {
-	font-size: 36px;
-	color: $yellow;
-
-	&--light {
-		color: $white;
-	}
-
-	&--light-blue {
-		color: $blue-light;
-	}
+	// font-size: rem();
 }
-
-.h2 {
-	font-size: 32px;
-	color: $white;
-}
-
-.h3 {
-	font-size: 28px;
-	color: $blue-dark;
-	&--light {
-		font-size: 24px;
-		color: $white;
-	}
-}
-
-.text-intro {
-	color: $blue-dark;
-}
-
-.h4 {
-	color: $white;
-}
-
-.h4, .text-intro {
-	font-size: 21px;
-}
-
-.h5 {
-	font-size: 16px;
-	color: $blue-dark;
-	&--light {
-		color: $white;
-	}
-}
-
-.button {
-	font-size: 16px;
-	color: $white;
-	&--dark {
-		color: $obsidian;
-	}
-}
-
-.p {
-	font-size: 18px;
-	color: $black;
-	&--blue {
-		color: $blue-dark;
-	}
-}
-
-.nav-text {
-	@extend .p;
-	color: $white;
-	&--blue {
-		color: $blue-dark;
-	}
-}
-
-.nav-text-footer,
-.legalese,
-.dropdown-menu {
-	font-size: 14px;
-}
-
-@include breakpoint($bp-sm) {
-	.h1 {
-		font-size: 48px;
-	}
-
-	.h2 {
-		font-size: 36px;
-	}
-
-	.h3 {
-		font-size: 32px;
-		&--light {
-			font-size: 28px;
-		}
-	}
-
-	.h4, .text-intro {
-		font-size: 24px;
-	}
-
-	.button {
-		font-size: 16px;
-	}
-
-	.p {
-		font-size: 18px;
-	}
-
-	// .social-media-icons {
-	// }
-
-	.nav-text-footer,
-	.legalese,
-	.dropdown-menu {
-		font-size: 15px;
-	}
-}
-
-
-
-
-
-@include breakpoint($bp-md) {
-	.h1 {
-		font-size: 62px;
-	}
-
-	.h2 {
-		font-size: 48px;
-	}
-
-	.h3 {
-		font-size: 36px;
-		&--light {
-			font-size: 32px;
-		}
-	}
-
-	.h4, .text-intro {
-		font-size: 24px;
-	}
-
-	.button {
-		font-size: 16px;
-	}
-
-	.p {
-		font-size: 18px;
-	}
-
-	// .social-media-icons {
-	// }
-
-
-		.nav-text-footer,
-		.legalese,
-		.dropdown-menu {
-			font-size: 16px;
-		}
-}
-
-
-
-// @include breakpoint($bp-lg) {
-// 	.h1 {
-// 		font-size: 96px;
-// 		letter-spacing: 3px;
-// 		line-height: 76px;
-// 	}
-// }
