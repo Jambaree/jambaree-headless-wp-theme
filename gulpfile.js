@@ -3,24 +3,23 @@
 //
 // Project variables
 //
-
 var project                 = 'Bare Naked', // Project Name.
     projectURL              = 'barenaked.dev', // Project URL. Could be something like localhost:8888.
     productURL              = './'; // Theme URL. Leave it like it is, since our gulpfile.js lives in the root
 
+
+//
+// Project directories
+//
 var styleWatchFiles         = 'sass/**/*.scss', // Path to all *.scss files inside css folder and inside them.
     styleSRC                = '*.css',
     customJSWatchFiles      = 'js/*.js', // Path to all custom JS files.
     projectPHPWatchFiles    = '**/*.php'; // Path to all PHP files.
 
-//
-//
-
 
 //
 // Dependencies and methods
 //
-
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
@@ -30,7 +29,9 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
     reload = browserSync.reload; // For manual browser reload.
 
+//
 // Browserlist https://github.com/ai/browserslist
+//
 const AUTOPREFIXER_BROWSERS = [
     'last 2 version',
     '> 1%',
@@ -43,6 +44,9 @@ const AUTOPREFIXER_BROWSERS = [
     'android >= 4'
   ];
 
+//
+// Sass tools
+//
 var sass_config = {
   importer: importer,
   includePaths: [
@@ -52,6 +56,9 @@ var sass_config = {
   ]
 };
 
+//
+// BrowserSync configuration
+//
 gulp.task( 'browser-sync', function() {
   browserSync.init( {
       proxy: projectURL,
@@ -61,12 +68,15 @@ gulp.task( 'browser-sync', function() {
   } );
 });
 
+//
+//  scss transpilation and injection
+//
 gulp.task('sass', function () {
   gulp.src('./sass/**/*.scss')
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass(sass_config).on('error', sass.logError))
-    .pipe( autoprefixer( AUTOPREFIXER_BROWSERS ) )
+    .pipe(autoprefixer( AUTOPREFIXER_BROWSERS ))
     .pipe(sourcemaps.write('./', {addComment: true}))
     .pipe(gulp.dest('./'));
 });
@@ -77,6 +87,9 @@ gulp.task('styles', function () {
    .pipe( browserSync.stream() )
 });
 
+//
+// Watch files
+//
 gulp.task( 'default', ['browser-sync'], function () {
  gulp.watch( projectPHPWatchFiles, reload );
  gulp.watch( styleWatchFiles, [ 'sass' ] );
