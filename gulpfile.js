@@ -4,8 +4,7 @@
 // Project variables
 //
 var project                 = 'Bare Naked', // Project Name.
-    projectURL              = 'barenaked.dev', // Project URL. Could be something like localhost:8888.
-    productURL              = './'; // Theme URL. Leave it like it is, since our gulpfile.js lives in the root
+    projectURL              = 'barenaked.dev'; // Project URL. Could be something like localhost:8888.
 
 
 //
