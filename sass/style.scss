@@ -16,40 +16,40 @@ Description: A simple WP starter theme using singularitygs
 */
 
 
-
-// Import Vendor CSS
-@import 'vendor/breakpoint',
-				'vendor/singularitygs',
-				// 'vendor/normalize',
-				'vendor/normalize-new',
-				'vendor/hamburgers/hamburgers',
-				'vendor/spinner';
-
-// Import Base
-@import 'base/colours',
-				'base/variables',
-				'base/base',
-				'base/typography',
-				'modules/legal',
-				'modules/main-logo',
-				'modules/menu-main-mobile',
-				'modules/menu-main-desktop',
-				'modules/menu-main-button',
-				'modules/header',
-				'modules/bg-overlay';
-
-
-
-// Import Layouts
-
-
-// Import Modules
-@import 'modules/buttons/button';
-
-// Import States
-@import 'state/state';
-
-// Template specific css
-
-
-// Import Overrides
+// 
+// // Import Vendor CSS
+// @import 'vendor/breakpoint',
+// 				'vendor/singularitygs',
+// 				// 'vendor/normalize',
+// 				'vendor/normalize-new',
+// 				'vendor/hamburgers/hamburgers',
+// 				'vendor/spinner';
+//
+// // Import Base
+// @import 'base/colours',
+// 				'base/variables',
+// 				'base/base',
+// 				'base/typography',
+// 				'modules/legal',
+// 				'modules/main-logo',
+// 				'modules/menu-main-mobile',
+// 				'modules/menu-main-desktop',
+// 				'modules/menu-main-button',
+// 				'modules/header',
+// 				'modules/bg-overlay';
+//
+//
+//
+// // Import Layouts
+//
+//
+// // Import Modules
+// @import 'modules/buttons/button';
+//
+// // Import States
+// @import 'state/state';
+//
+// // Template specific css
+//
+//
+// // Import Overrides
