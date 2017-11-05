@@ -27,6 +27,7 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
     reload = browserSync.reload; // For manual browser reload.
 
+
 //
 // Browserlist https://github.com/ai/browserslist
 //
@@ -42,6 +43,7 @@ const AUTOPREFIXER_BROWSERS = [
     'android >= 4'
   ];
 
+
 //
 // Sass tools
 //
@@ -55,6 +57,7 @@ var sass_config = {
   ]
 };
 
+
 //
 // BrowserSync configuration
 //
@@ -66,6 +69,7 @@ gulp.task( 'browser-sync', function() {
       notify: false
   } );
 });
+
 
 //
 //  scss transpilation and injection
@@ -80,6 +84,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(''))
     .pipe(browserSync.stream());
 });
+
 
 //
 // Watch files
