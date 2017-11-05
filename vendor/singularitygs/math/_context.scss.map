@@ -1,1 +1,0 @@
-{"version":3,"sources":["_context.scss"],"names":[],"mappings":"AAAA;EACE,uCAAuC;CACxC","file":"_context.scss","sourcesContent":["@function context($primary, $secondary) {\n  @return ($primary / $secondary) * 100%;\n}"]}
