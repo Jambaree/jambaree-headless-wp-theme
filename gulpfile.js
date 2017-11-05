@@ -18,7 +18,7 @@ var styleWatchFiles         = 'sass/**/*.scss', // Path to all *.scss files insi
 
 
 //
-// Dependencies
+// Dependencies and methods
 //
 
 var gulp = require('gulp'),
@@ -27,14 +27,10 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     importer = require('node-sass-globbing'),
     plumber = require('gulp-plumber'),
-    uncss = require('gulp-uncss'),
-    stripCssComments = require('gulp-strip-css-comments'),
-    uglify = require('gulp-uglify'),
-    cleanCSS = require('gulp-clean-css'),
     browserSync = require('browser-sync').create(),
     reload = browserSync.reload; // For manual browser reload.
 
-// Browserlist https        ://github.com/ai/browserslist
+// Browserlist https://github.com/ai/browserslist
 const AUTOPREFIXER_BROWSERS = [
     'last 2 version',
     '> 1%',
@@ -44,8 +40,7 @@ const AUTOPREFIXER_BROWSERS = [
     'safari >= 7',
     'opera >= 23',
     'ios >= 7',
-    'android >= 4',
-    'bb >= 10'
+    'android >= 4'
   ];
 
 var sass_config = {
@@ -59,15 +54,10 @@ var sass_config = {
 
 gulp.task( 'browser-sync', function() {
   browserSync.init( {
-
-    proxy: projectURL,
-
-    open: true,
-
-    injectChanges: true,
-
-    notify: false
-
+      proxy: projectURL,
+      open: true,
+      injectChanges: true,
+      notify: false
   } );
 });
 
@@ -76,29 +66,20 @@ gulp.task('sass', function () {
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass(sass_config).on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: ['last 2 version']
-    }))
+    .pipe( autoprefixer( AUTOPREFIXER_BROWSERS ) )
     .pipe(sourcemaps.write('./', {addComment: true}))
-    // .pipe(stripCssComments({preserve: true}))
-    // .pipe(gulp.dest('./'))
-    // .pipe(uncss({
-    //       html: ['./html/**/*.html']
-    //   }))
     .pipe(gulp.dest('./'));
 });
-
 
 gulp.task('styles', function () {
    gulp.src( styleSRC )
    .on('error', console.error.bind(console))
-  //  .pipe( autoprefixer( AUTOPREFIXER_BROWSERS ) )
-   .pipe( browserSync.stream() )// Reloads style.min.css if that is enqueued.
+   .pipe( browserSync.stream() )
 });
 
 gulp.task( 'default', ['browser-sync'], function () {
- gulp.watch( projectPHPWatchFiles, reload ); // Reload on PHP file changes.
- gulp.watch( styleWatchFiles, [ 'sass' ] ); // Reload on SCSS file changes.
+ gulp.watch( projectPHPWatchFiles, reload );
+ gulp.watch( styleWatchFiles, [ 'sass' ] );
  gulp.watch( styleSRC, [ 'styles' ] );
- gulp.watch( customJSWatchFiles, reload ); // Reload on customJS file changes.
+ gulp.watch( customJSWatchFiles, reload );
 });
