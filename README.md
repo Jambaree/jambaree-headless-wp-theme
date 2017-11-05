@@ -21,3 +21,16 @@ We're using susy 3 while transitioning to using the CSS Grid module. Writing res
 We're using BEM to keep the relationship between module parts apparent and easy to understand. SMACSS is used to organize our styles in modules. It's a good idea to keep the file names and element names the same. ex `menu.php` `_menu.scss` `.menu` `.menu__item`
 - http://getbem.com/
 - https://smacss.com/
+
+## Typography
+To unlink styles from markup, heading elements should be styled by class only. Instead of styling `h1 {}`, style `.h1 {}`, etc.
+
+To eliminate render blocking font loading and keep FOUT to a minimum, we base64 encode fonts and serve them via defered JS using localfont.
+- https://github.com/jaicab/localFont
+- https://jaicab.com/localFont/
+
+To use google fonts as base64 we self host them using the google fonts web helper
+- https://google-webfonts-helper.herokuapp.com/fonts
+
+Font sizes should be in rem's and em's. The main font size should be 100% to allow users to change their font size. Components of modules should use em units so that the module can scale the font size of its contents using rem. A sass rem utility is included to make translating px to rems from sketch files and psd's easier
+- https://github.com/pierreburel/sass-rem
