@@ -1,5 +1,5 @@
 <?php
-// Tyler Theme
+// Bare Naked
 // Generic Index Page
 
 get_header(); ?>

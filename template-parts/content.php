@@ -1,5 +1,5 @@
 <?php
-// Tyler Theme
+// Bare Naked
 // Page content
 
 ?>

@@ -1,5 +1,5 @@
 <?php
-// Tyler Theme
+// Bare Naked
 // Default Page Template
 
  get_header(); ?>

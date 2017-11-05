@@ -1,5 +1,5 @@
 <?php
-// Tyler Theme
+// Bare Naked
 // 404 page (not found)
 
 get_header(); ?>
