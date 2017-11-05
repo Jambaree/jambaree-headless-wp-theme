@@ -4,8 +4,8 @@
 // Project variables
 //
 
-var project                 = 'PRP', // Project Name.
-    projectURL              = 'prp.dev', // Project URL. Could be something like localhost:8888.
+var project                 = 'Bare Naked', // Project Name.
+    projectURL              = 'barenaked.dev', // Project URL. Could be something like localhost:8888.
     productURL              = './'; // Theme URL. Leave it like it is, since our gulpfile.js lives in the root
 
 var styleWatchFiles         = 'sass/**/*.scss', // Path to all *.scss files inside css folder and inside them.
