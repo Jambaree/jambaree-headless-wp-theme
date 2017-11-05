@@ -1,4 +1,16 @@
 'use strict';
+
+//
+// Project variables
+//
+
+var project                 = 'PRP', // Project Name.
+    projectURL              = 'prp.dev', // Project URL. Could be something like localhost:8888.
+    productURL              = './'; // Theme URL. Leave it like it is, since our gulpfile.js lives in the root
+
+//
+//
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
@@ -13,10 +25,6 @@ var uglify = require('gulp-uglify');
 var cleanCSS = require('gulp-clean-css');
 
 var reload = browserSync.reload; // For manual browser reload.
-
-var project                 = 'PRP'; // Project Name.
-var projectURL              = 'prp.dev'; // Project URL. Could be something like localhost:8888.
-var productURL              = './'; // Theme/Plugin URL. Leave it like it is, since our gulpfile.js lives in the root
 
 // Browserlist https        ://github.com/ai/browserslist
 const AUTOPREFIXER_BROWSERS = [
