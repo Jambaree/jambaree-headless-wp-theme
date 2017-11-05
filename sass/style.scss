@@ -16,8 +16,9 @@ Description: A simple WP starter theme using singularitygs
 */
 
 
-// 
+//
 // // Import Vendor CSS
+@import "susy";
 // @import 'vendor/breakpoint',
 // 				'vendor/singularitygs',
 // 				// 'vendor/normalize',

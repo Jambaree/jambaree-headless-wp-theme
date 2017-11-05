@@ -51,7 +51,8 @@ var sass_config = {
   includePaths: [
     'node_modules/breakpoint-sass/stylesheets/',
     'node_modules/modularscale-sass/stylesheets',
-    'node_modules/compass-mixins/lib/'
+    'node_modules/compass-mixins/lib/',
+    'node_modules/susy/sass'
   ]
 };
 
