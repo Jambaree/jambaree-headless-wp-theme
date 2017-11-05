@@ -28,7 +28,6 @@ var gulp = require('gulp'),
     importer = require('node-sass-globbing'),
     plumber = require('gulp-plumber'),
     browserSync = require('browser-sync').create(),
-    cssmin = require('gulp-cssmin'),
     uncss = require('gulp-uncss'),
     stripCssComments = require('gulp-strip-css-comments'),
     uglify = require('gulp-uglify'),
@@ -87,7 +86,6 @@ gulp.task('sass', function () {
     // .pipe(uncss({
     //       html: ['./html/**/*.html']
     //   }))
-    // .pipe(cssmin())
     .pipe(gulp.dest('./'));
 });
 
