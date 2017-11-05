@@ -12,7 +12,6 @@ var project                 = 'Bare Naked', // Project Name.
 // Project directories
 //
 var styleWatchFiles         = 'sass/**/*.scss', // Path to all *.scss files inside css folder and inside them.
-    styleSRC                = '*.css',
     customJSWatchFiles      = 'js/*.js', // Path to all custom JS files.
     projectPHPWatchFiles    = '**/*.php'; // Path to all PHP files.
 
@@ -78,13 +77,8 @@ gulp.task('sass', function () {
     .pipe(sass(sass_config).on('error', sass.logError))
     .pipe(autoprefixer( AUTOPREFIXER_BROWSERS ))
     .pipe(sourcemaps.write('./', {addComment: true}))
-    .pipe(gulp.dest('./'));
-});
-
-gulp.task('styles', function () {
-   gulp.src( styleSRC )
-   .on('error', console.error.bind(console))
-   .pipe( browserSync.stream() )
+    .pipe(gulp.dest('./'))
+    .pipe(browserSync.stream());
 });
 
 //
@@ -93,6 +87,5 @@ gulp.task('styles', function () {
 gulp.task( 'default', ['browser-sync'], function () {
  gulp.watch( projectPHPWatchFiles, reload );
  gulp.watch( styleWatchFiles, [ 'sass' ] );
- gulp.watch( styleSRC, [ 'styles' ] );
  gulp.watch( customJSWatchFiles, reload );
 });
