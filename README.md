@@ -14,7 +14,7 @@ We're using susy 3 while transitioning to using the CSS Grid module. Writing res
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 - http://ruby.bvision.com/blog/please-stop-embedding-bootstrap-classes-in-your-html
 
-##CSS naming convention and architecture
+## CSS naming convention and architecture
 We're using BEM to keep the relationship between module parts apparent and easy to understand. SMACSS is used to organize our styles in modules. If writing modules as php includes, it's a good idea to keep the file names and element names the same. ex `menu.php` `_menu.scss` `.menu` `.menu__item`
 - http://getbem.com/
 - https://smacss.com/
