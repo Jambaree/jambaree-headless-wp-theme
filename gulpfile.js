@@ -71,13 +71,13 @@ gulp.task( 'browser-sync', function() {
 //  scss transpilation and injection
 //
 gulp.task('sass', function () {
-  gulp.src('./sass/**/*.scss')
+  gulp.src('sass/**/*.scss')
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass(sass_config).on('error', sass.logError))
     .pipe(autoprefixer( AUTOPREFIXER_BROWSERS ))
-    .pipe(sourcemaps.write('./', {addComment: true}))
-    .pipe(gulp.dest('./'))
+    .pipe(sourcemaps.write('', {addComment: true}))
+    .pipe(gulp.dest(''))
     .pipe(browserSync.stream());
 });
 
