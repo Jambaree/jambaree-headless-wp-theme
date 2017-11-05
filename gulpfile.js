@@ -105,9 +105,3 @@ gulp.task( 'default', ['browser-sync'], function () {
  gulp.watch( styleSRC, [ 'styles' ] );
  gulp.watch( customJSWatchFiles, reload ); // Reload on customJS file changes.
 });
-
-gulp.task('minify-css', function() {
-  return gulp.src('style.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('./'));
-});
