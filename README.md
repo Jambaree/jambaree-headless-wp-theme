@@ -34,3 +34,11 @@ To use google fonts as base64 we self host them using the google fonts web helpe
 
 Font sizes should be in rem's and em's. The main font size should be 100% to allow users to change their font size. Components of modules should use em units so that the module can scale the font size of its contents using rem. A sass rem utility is included to make translating px to rems from sketch files and psd's easier
 - https://github.com/pierreburel/sass-rem
+
+## Asset queue management
+Include all js files separately (in order of dependance) as they will be concatenated and served as a single file by autoptimize. Autoptimize also makes minification unnecessary at the build level.
+
+## General best practises
+- Using id's leads to single use code and specificity wars. Don't do it! use classes only! id's should only be used for href links. Make your code reusable. http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/
+- Keep classes on elements down to one and use sass extends instead (use two classes only if necessary).
+- Background images are content. They can be added with inline css.
