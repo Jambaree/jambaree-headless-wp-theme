@@ -27,13 +27,12 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     importer = require('node-sass-globbing'),
     plumber = require('gulp-plumber'),
-    browserSync = require('browser-sync').create(),
     uncss = require('gulp-uncss'),
     stripCssComments = require('gulp-strip-css-comments'),
     uglify = require('gulp-uglify'),
-    cleanCSS = require('gulp-clean-css');
-
-var reload = browserSync.reload; // For manual browser reload.
+    cleanCSS = require('gulp-clean-css'),
+    browserSync = require('browser-sync').create(),
+    reload = browserSync.reload; // For manual browser reload.
 
 // Browserlist https        ://github.com/ai/browserslist
 const AUTOPREFIXER_BROWSERS = [
