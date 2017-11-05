@@ -1,5 +1,6 @@
 # Bare Naked theme
 This is a bare naked WordPress starter theme. It uses SMACSS, BEM, Gulp, and Advanced Custom Fields Pro as a starting point.
+This theme is built for quick development via autorefreshing the browser and modular code practises.
 
 
 ## Getting started
