@@ -80,19 +80,19 @@
             transform: translateY(-50%);
   }
 }
+//
+// @include breakpoint($bp-md) {
+//   .main-menu__button {
+//     width: 120px;
+//     height: 101px;
+//   }
+// }
 
-@include breakpoint($bp-md) {
-  .main-menu__button {
-    width: 120px;
-    height: 101px;
-  }
-}
 
-
-@if $full-menu-desk == true {
-    @media (min-width: ($full-menu-desk-bp - 1)) {
-      .hamburger__layout {
-        display: none;
-      }
-    }
-}
+// @if $full-menu-desk == true {
+//     @media (min-width: ($full-menu-desk-bp - 1)) {
+//       .hamburger__layout {
+//         display: none;
+//       }
+//     }
+// }

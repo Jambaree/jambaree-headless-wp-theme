@@ -7,7 +7,7 @@ get_header(); ?>
 
 	<main class='page clearfix'>
 
-		<div class="grid">
+		<div class="grid-edges">
 			<section class="error-404 not-found">
 				<header class="page__header">
 					<h1 class="h1">Oops! That page can't be found.</h1>

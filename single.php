@@ -4,9 +4,6 @@
 
 get_header(); ?>
 
-	<?php the_title( '<h1 class="h1">', '</h1>' ); ?>
-</header>
-
 <main class='main'>
 
   <?php if(have_posts()): ?>
@@ -23,5 +20,4 @@ get_header(); ?>
 </main>
 
 <?php
-// get_sidebar();
 get_footer();

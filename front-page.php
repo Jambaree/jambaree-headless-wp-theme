@@ -9,18 +9,9 @@ get_header(); ?>
 
 <main class='main'>
 
-  <a href="" class="button--angle-hover">
-          <span class="button__background"></span>
-          <div class="button__copy">Contact us</div>
-  </a>
-
-  <?php if(have_posts()): ?>
-    <?php while(have_posts()): the_post(); ?>
-      <div class="grid">
-        <?php the_content(); ?>
-      </div>
-    <?php endwhile; ?>
-  <?php endif; ?>
+  <div class="grid-edges">
+    
+  </div>
 
 </main>
 

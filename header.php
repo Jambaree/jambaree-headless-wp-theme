@@ -15,29 +15,9 @@
 
 <body <?php body_class(); ?>>
 
-	<?php include('wp-modules/burger.php') ?>
+	<?php include('inc/modules/main-menu.php'); ?>
 
 	<header class="main-header" role="banner" style='background-image: url("<?php the_field('background_image'); ?>");'>
-
-			<section class="main-menu">
-
-					<div class="site-title">
-						<a href="<?php echo get_home_url(); ?>" rel="home">
-
-							<?php if( get_field( 'main_logo', 'option' ) ): ?>
-								<img class='site-title__logo' src="<?php the_field( 'main_logo', 'option' ); ?>" alt="<?php bloginfo( 'name' ); ?> Logo">
-							<?php else: ?>
-								<div class="p">Home</div>
-							<?php endif; ?>
-
-							<span class='screen-reader-text'><?php bloginfo( 'name' ); ?></span>
-						</a>
-					</div>
-
-					<nav class="main-navigation-desktop">
-						<?php wp_nav_menu( array( 'theme_location' => 'main', 'menu_class' => 'main-menu' ) ); ?>
-					</nav>
-			</section>
 
 			<div class="grid-edges">
 				<div class="main-header__inner">

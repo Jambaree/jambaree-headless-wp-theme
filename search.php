@@ -4,8 +4,6 @@
 
 get_header(); ?>
 
-</header>
-
 <main class='main'>
 
   <?php if(have_posts()): ?>
@@ -38,5 +36,4 @@ get_header(); ?>
 </main>
 
 <?php
-get_sidebar();
 get_footer();

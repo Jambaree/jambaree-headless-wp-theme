@@ -1,7 +1,15 @@
 //
 // Menu breakpoint
 //
-$full-menu-desk-bp: 1200px;
+$full-menu-desk-bp: 1200px; // Burger becomes full menu after this point
+
+//
+// Grid width
+//
+$grid-edges-width: 95%;
+$grid-edges-width-breakpoint: 500px; // Breakpoint where grid width changes size
+$grid-edges-width-after-breakpoint: 83%; // Site width after breakpoint
+$grid-edges-max-width: 1400px;
 
 //
 // Colours

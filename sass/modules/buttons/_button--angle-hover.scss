@@ -17,6 +17,11 @@
   }
 
   &--angle-hover {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    transition: .5s all ease;
     &:after {
         opacity: 0;
         display: block;
@@ -35,6 +40,7 @@
     }
 
     &:hover {
+      color: white;
       &:after {
         opacity: 1;
         transform: skewX(-11.5deg) scaleX(1);

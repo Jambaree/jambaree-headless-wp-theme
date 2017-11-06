@@ -1,0 +1,10 @@
+//  Varis for this are in configuration.scss
+.grid-edges {
+  width: $grid-edges-width;
+  margin: 0 auto;
+
+  @media (min-width: $grid-edges-width-breakpoint) {
+    width: $grid-edges-width-after-breakpoint;
+    max-width: $grid-edges-max-width;
+  }
+}

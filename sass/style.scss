@@ -38,10 +38,12 @@ Description: A simple WP starter theme
 // Import Modules
 //
 @import 'modules/legal',
-'modules/main-logo',
-'modules/menu-main-mobile',
-'modules/menu-main-button',
-'modules/header';
+				'modules/main-logo',
+				'modules/menu-main-button',
+				'modules/header',
+				'modules/credits',
+				'modules/button',
+				'modules/buttons/button--angle-hover';
 
 
 //
