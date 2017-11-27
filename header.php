@@ -15,22 +15,10 @@
 
 <body <?php body_class(); ?>>
 
-	<?php include('inc/modules/main-menu.php'); ?>
+	<?php
 
-	<header class="main-header" role="banner" style='background-image: url("<?php the_field('background_image'); ?>");'>
+	include('template-objects/menu/main-menu.php');
 
-			<div class="grid-edges">
-				<div class="main-header__inner">
-					<?php if(get_field('header_title')): ?>
-						<h1 class="main-header__title h1"><?php //the_field('header_title'); ?></h1>
-					<?php else: ?>
-						<h1 class="main-header__title h1"><?php the_title(); ?></h1>
-					<?php endif; ?>
+	include('template-objects/boxes/big-box.php');
 
-					<?php if(get_field('header_subheading')): ?>
-						<div class="p"><?php the_field('header_subheading'); ?></div>
-					<?php endif; ?>
-				</div>
-	    </div>
-
-	</header>
+	?>
