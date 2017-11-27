@@ -354,7 +354,7 @@ a, a:visited, a:active {
   z-index: 100000;
   /* Above WP toolbar. */ }
 
-.clearfix:after, .legal:after, .main-header:after, .credits__logos:after {
+.clearfix:after {
   content: '';
   clear: both; }
 
@@ -367,151 +367,12 @@ a, a:visited, a:active {
     height: 100%;
     background-color: rgba(47, 46, 46, 0.1); }
 
-.legal {
-  text-align: center;
-  background: #C1C1C1;
-  padding: 10px 15px; }
-  .legal__copyright {
-    margin-bottom: 10px; }
-
-.site-title {
-  height: 100%;
-  padding: 8px 9px 11px 10px;
-  float: left;
-  background: #ffffff; }
-  .site-title__logo {
-    height: 100%;
-    width: 100%;
-    display: block; }
-
-.main-menu__button {
-  background: #ffffff;
-  color: #3B3B3B;
-  height: 100%;
-  outline: 0;
-  text-align: center; }
-  .main-menu__button:hover {
-    opacity: 1; }
-
-.hamburger {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  float: right; }
-
-.hamburger-box {
-  width: 30px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  background-color: #3B3B3B;
-  width: 100%;
-  border-radius: 0;
-  transition-property: width, -webkit-transform;
-  transition-property: -webkit-transform, width;
-  transition-property: transform, width;
-  transition-property: -webkit-transform, width, -webkit-transform;
-  transition-property: transform, width, -webkit-transform; }
-
-.hamburger:not(.is-active) .hamburger-inner::before {
-  width: 66%; }
-
-.hamburger:not(.is-active) .hamburger-inner::after {
-  width: 33%; }
-
-.hamburger-title {
-  display: block; }
-  .hamburger-title__container {
-    height: 20px;
-    width: 100%;
-    display: inline-block;
-    overflow: hidden;
-    margin-top: 10px; }
-  .hamburger-title__inner {
-    transition: -webkit-transform .25s ease;
-    transition: transform .25s ease;
-    transition: -webkit-transform .25s ease, -webkit-transform .25s ease;
-    transition: transform .25s ease, -webkit-transform .25s ease;
-    transition-delay: .1s;
-    display: inline-block; }
-
-.hamburger.is-active .hamburger-title__inner {
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
-.main-header {
-  background-color: #C1C1C1;
-  color: #ffffff;
-  background-size: cover;
-  background-position: center; }
-  .main-header__inner {
-    text-align: center;
-    position: relative;
-    margin: 0; }
-  .main-header__title {
-    margin: 0 auto; }
-
-.credits {
-  background: #ffffff;
-  text-align: center;
-  clear: both;
-  position: relative;
-  padding-top: 40px; }
-  .credits__title {
-    margin: 0; }
-  .credits .logo-block__image {
-    height: auto;
-    padding: 30px 0; }
-
-.button__background {
-  position: absolute;
-  z-index: -2;
-  top: 0;
-  bottom: 1px;
-  right: 0;
-  left: 0;
-  display: block;
-  height: 100%; }
-
-.button--angle-hover {
-  position: relative;
-  display: inline-block;
-  margin: 10px;
-  padding: 10px;
-  transition: .5s all ease; }
-  .button--angle-hover:after {
-    opacity: 0;
-    display: block;
-    content: '';
-    position: absolute;
-    z-index: -1;
-    transition: all .5s;
-    height: 100%;
-    top: 0;
-    left: -20px;
-    right: -20px;
-    bottom: -1px;
-    -webkit-transform-origin: 50% 0;
-            transform-origin: 50% 0;
-    -webkit-transform: skewX(-11.5deg) scaleX(0);
-            transform: skewX(-11.5deg) scaleX(0);
-    background: #000; }
-  .button--angle-hover:hover {
-    color: white; }
-    .button--angle-hover:hover:after {
-      opacity: 1;
-      -webkit-transform: skewX(-11.5deg) scaleX(1);
-              transform: skewX(-11.5deg) scaleX(1); }
+.grid-edges {
+  width: 95%;
+  margin: 0 auto; }
+  @media (min-width: 500px) {
+    .grid-edges {
+      width: 83%;
+      max-width: 1400px; } }
 
 /*# sourceMappingURL=style.css.map */

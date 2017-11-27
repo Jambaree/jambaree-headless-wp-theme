@@ -12,20 +12,6 @@ $grid-edges-width-after-breakpoint: 83%; // Site width after breakpoint
 $grid-edges-max-width: 1400px;
 
 //
-// Colours
-//
-$white: #ffffff;
-$black: #3B3B3B;
-$obsidian: #1B1B1B;
-$grey: #C1C1C1;
-$blue: #0f83f5;
-
-//
-// Overlay colours
-//
-$black-overlay: rgba(47, 46, 46, 0.1);
-
-//
 // Typography colours
 //
 $body-colour: $white;
@@ -37,13 +23,9 @@ $anchor-default: $blue;
 // Theme colours
 //
 $html-bg: $white;
-$header-bg-color: $grey;
-$loader-bg-color: $blue;
-$bg-overlay-colour: $black-overlay;
 $sub-menu-background-colour: $white;
 $sub-menu-font-colour: $black;
 $sub-menu-font-colour-active: $blue;
-$legal-bg: $grey;
 $burger-nav-bars: $black;
 $burger-nav-bg: $white;
 $burger-nav-text: $black;
