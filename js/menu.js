@@ -6,7 +6,7 @@ jQuery( document ).ready(function($) {
 	$('.hamburger').on('click', function() {
 
 		$('.hamburger').toggleClass('is-active');
-		$('.main-navigation').toggleClass('open');
+		$('.header-menu__menu').toggleClass('open');
 
 	});
 

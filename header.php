@@ -15,10 +15,4 @@
 
 <body <?php body_class(); ?>>
 
-	<?php
-
-	include('template-objects/menu/main-menu.php');
-
-	include('template-objects/boxes/big-box.php');
-
-	?>
+	<?php include('template-objects/menus/header-menu.php'); ?>

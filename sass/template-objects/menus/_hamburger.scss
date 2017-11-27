@@ -1,0 +1,14 @@
+$bgcolor--burger-nav-bars: $white;
+
+.hamburger {
+  padding: 0;
+  outline: 0;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  background-color: $bgcolor--burger-nav-bars;
+}

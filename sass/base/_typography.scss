@@ -1,3 +1,13 @@
+$heading-font-family: sans-serif, helvetica;
+$main-font-family: sans-serif, helvetica;
+$anchor-default: $blue;
+$headings-colour: $black;
+$body-colour: $white;
+
+html {
+  font-size: 62.5%;
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

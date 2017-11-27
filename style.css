@@ -7,11 +7,11 @@ ALSO IMPORTANT!
 If you do the above, all vendor prefixes will be lost and the site will lose most of its cross browser compatibility. Use atom autoprefixer or https://autoprefixer.github.io/ to update the vendor prefixes for EVERY .scss file, not just the one you've edited.
 */
 /*!
-Theme Name: Bare Naked
-Theme URI: https://gitlab.com/TylerB/bare-naked-theme
+Theme Name: Bare Naked Theme
+Theme URI: https://gitlab.com/bare-adv/bare-naked-theme
 Author: Tyler Barnes
 Author URI: http://tylerbarnes.ca
-Description: A simple WP starter theme
+Description: An Object oriented css theme starter
 */
 html {
   line-height: 1.15;
@@ -19,7 +19,11 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
 
 body {
   margin: 0; }
@@ -34,7 +38,8 @@ section {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  padding: 0.67em 0;
+  margin: 0; }
 
 figcaption,
 figure,
@@ -42,7 +47,7 @@ main {
   display: block; }
 
 figure {
-  margin: 1em 40px; }
+  padding: 1em 40px; }
 
 hr {
   box-sizing: content-box;
@@ -230,6 +235,10 @@ template {
 [hidden] {
   display: none; }
 
+ul, ol {
+  padding: 1em;
+  margin: 0; }
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -310,6 +319,9 @@ template {
             transform: translate3d(0, -20px, 0) rotate(-270deg);
     transition-delay: 0.075s; }
 
+html {
+  font-size: 62.5%; }
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -358,21 +370,83 @@ a, a:visited, a:active {
   content: '';
   clear: both; }
 
-.bg-overlay {
-  position: relative; }
-  .bg-overlay:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(47, 46, 46, 0.1); }
-
-.grid-edges {
-  width: 95%;
+.grid-edges, .header-menu__edges {
+  width: 90%;
   margin: 0 auto; }
   @media (min-width: 500px) {
-    .grid-edges {
+    .grid-edges, .header-menu__edges {
       width: 83%;
       max-width: 1400px; } }
+
+.header-menu {
+  background: #3B3B3B; }
+  .header-menu__edges {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .header-menu__edges > * {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    @media (max-width: 499px) {
+      .header-menu__edges {
+        height: 50px; } }
+  .header-menu__menu ul {
+    list-style: none; }
+  .header-menu__menu a {
+    font-size: 1.6em; }
+  @media (max-width: 499px) {
+    .header-menu__menu {
+      position: fixed;
+      right: 0;
+      top: 50px;
+      overflow-y: auto;
+      height: calc(100vh - 50px);
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+      transition: .25s ease -webkit-transform;
+      transition: .25s ease transform;
+      background: #3B3B3B;
+      color: white;
+      padding: 2em; }
+      .header-menu__menu a {
+        color: #ffffff; }
+      .header-menu__menu.open {
+        -webkit-transform: translateX(0);
+                transform: translateX(0); } }
+  .header-menu__title {
+    width: 65.51724%;
+    margin-right: 3.44828%; }
+  .header-menu__title-heading {
+    font-size: 2rem; }
+  .header-menu a {
+    color: #ffffff; }
+  .header-menu__menu-box {
+    width: 31.03448%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  @media screen and (min-width: 500px) {
+    .header-menu__menu {
+      display: block; }
+    .header-menu .hamburger {
+      display: none; }
+    .header-menu__title {
+      width: 32.20339%;
+      margin-right: 1.69492%; }
+    .header-menu__menu-box {
+      width: 74.57627%; } }
+
+.hamburger {
+  padding: 0;
+  outline: 0; }
+  .hamburger:hover {
+    opacity: 1; }
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  background-color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

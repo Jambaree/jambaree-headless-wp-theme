@@ -1,4 +1,8 @@
-//  Vars for this are in ../_config.scss
+$grid-edges-width: 90%; // initial width
+$grid-edges-width-breakpoint: 500px; // Breakpoint where grid width changes size
+$grid-edges-width-after-breakpoint: 83%; // Site width after breakpoint
+$grid-edges-max-width: 1400px; // max width for large screens
+
 .grid-edges {
   width: $grid-edges-width;
   margin: 0 auto;
