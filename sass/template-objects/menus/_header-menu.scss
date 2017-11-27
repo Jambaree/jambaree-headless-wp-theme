@@ -1,11 +1,11 @@
-$header-menu-bp: 500px;
-$header-menu-bgcolor: $black;
-$header-menu-fontcolor: $white;
-
-$mobile-menu-height: 50px;
+$mobile-menu-height: 60px;
 $mobile-menu-bgcolor: $black;
 $mobile-menu-fontcolor: $white;
 
+$header-menu-bp: 500px;
+$header-menu-height: 75px;
+$header-menu-bgcolor: $black;
+$header-menu-fontcolor: $white;
 
 .header-menu {
   background: $header-menu-bgcolor;
@@ -81,6 +81,10 @@ $mobile-menu-fontcolor: $white;
 
     .hamburger {
       display: none;
+    }
+
+    &__edges {
+      height: $header-menu-height;
     }
 
     &__title {
