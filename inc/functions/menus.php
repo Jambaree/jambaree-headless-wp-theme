@@ -2,7 +2,8 @@
 
 function bareNakedMenus() {
   register_nav_menus( array(
-    'main' => 'Main Menu'
+    'main' => 'Main Menu',
+    'footer' => 'Footer Menu'
   ) );
 }
 

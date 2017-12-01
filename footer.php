@@ -6,7 +6,7 @@
 
 		<footer class="site-footer">
 			<div class="grid-edges">
-				<?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
 				<?php //get_template_part('modules/social', 'icons'); ?>
 			</div>
 
