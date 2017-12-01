@@ -31,7 +31,8 @@ Description: An Object oriented css theme starter
 				'base/typography',
         'base/accessibility',
         'base/extends',
-        'base/grid';
+        'base/grid',
+				'base/page';
 
 
 //
@@ -39,7 +40,10 @@ Description: An Object oriented css theme starter
 //
 @import 'template-objects/menus/header-menu',
 				'template-objects/menus/hamburger',
-				'template-objects/menus/menu';
+				'template-objects/menus/menu',
+				'template-objects/big-box',
+				'template-objects/text-area',
+				'template-objects/footer/footer';
 
 
 //

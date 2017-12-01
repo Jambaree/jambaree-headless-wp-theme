@@ -1,0 +1,10 @@
+.text-area {
+  @extend .section;
+  
+  &--white-bg {
+    @extend .text-area;
+    * {
+      color: $black;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.big-box {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @extend .bg-overlay;
+
+  &__inner {
+    @extend .grid-edges;
+    display: flex;
+  }
+
+  &--min-half-height {
+    @extend .big-box;
+    min-height: 50vh !important;
+  }
+}
+
+@media screen and (min-width: $header-menu-bp) {
+  .main-flexible-content {
+    .big-box {
+      &:first-child {
+        min-height: calc(100vh - #{$header-menu-height});
+      }
+    }
+  }
+}
