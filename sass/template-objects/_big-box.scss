@@ -1,5 +1,4 @@
 .big-box {
-  min-height: 100vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -10,6 +9,16 @@
   &__inner {
     @extend .grid-edges;
     display: flex;
+  }
+
+  &--auto-height {
+    @extend .big-box;
+    min-height: 100px !important;
+  }
+
+  &--full-height {
+    @extend .big-box;
+    min-height: 100vh;
   }
 
   &--min-half-height {

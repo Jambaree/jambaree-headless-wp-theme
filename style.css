@@ -370,9 +370,9 @@ a, a:visited, a:active {
   content: '';
   clear: both; }
 
-.bg-overlay, .big-box, .big-box--min-half-height {
+.bg-overlay, .big-box, .big-box--auto-height, .big-box--full-height, .big-box--min-half-height {
   position: relative; }
-  .bg-overlay:before, .big-box:before, .big-box--min-half-height:before {
+  .bg-overlay:before, .big-box:before, .big-box--auto-height:before, .big-box--full-height:before, .big-box--min-half-height:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -473,8 +473,7 @@ a, a:visited, a:active {
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   background-color: #ffffff; }
 
-.big-box, .big-box--min-half-height {
-  min-height: 100vh;
+.big-box, .big-box--auto-height, .big-box--full-height, .big-box--min-half-height {
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -491,11 +490,15 @@ a, a:visited, a:active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .big-box--auto-height {
+    min-height: 100px !important; }
+  .big-box--full-height {
+    min-height: 100vh; }
   .big-box--min-half-height {
     min-height: 50vh !important; }
 
 @media screen and (min-width: 500px) {
-  .main-flexible-content .big-box:first-child, .main-flexible-content .big-box--min-half-height:first-child {
+  .main-flexible-content .big-box:first-child, .main-flexible-content .big-box--auto-height:first-child, .main-flexible-content .big-box--full-height:first-child, .main-flexible-content .big-box--min-half-height:first-child {
     min-height: calc(100vh - 75px); } }
 
 .text-area--white-bg * {

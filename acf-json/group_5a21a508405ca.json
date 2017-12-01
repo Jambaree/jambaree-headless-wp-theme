@@ -1,0 +1,71 @@
+{
+    "key": "group_5a21a508405ca",
+    "title": "Object: Rows \/ Columns",
+    "fields": [
+        {
+            "key": "field_5a21a523d067e",
+            "label": "Row",
+            "name": "row",
+            "type": "repeater",
+            "instructions": "The columns in this row will sit side by side when there is enough horizontal space.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Column",
+            "sub_fields": [
+                {
+                    "key": "field_5a21a54cd067f",
+                    "label": "Column",
+                    "name": "column",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_5a20a65f428f0"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1512157571
+}

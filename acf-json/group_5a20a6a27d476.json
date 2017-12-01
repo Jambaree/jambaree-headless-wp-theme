@@ -40,6 +40,7 @@
                 "id": ""
             },
             "choices": {
+                "auto-height": "Auto Height (Default)",
                 "full-height": "Full screen height",
                 "min-half-height": "Minimum half screen height"
             },
@@ -95,6 +96,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5a21a5e109b93": {
+                    "key": "5a21a5e109b93",
+                    "name": "row_columns",
+                    "label": "Row \/ Columns",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a21a5f509b94",
+                            "label": "Rows \/ Columns",
+                            "name": "rows_columns_group",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a21a508405ca"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Content",
@@ -119,5 +151,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1512091470
+    "modified": 1512169073
 }
