@@ -69,13 +69,13 @@
                 "5a20ab4d6864d": {
                     "key": "5a20ab4d6864d",
                     "name": "text_area",
-                    "label": "Wysiwyg",
+                    "label": "Text Area",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5a20ab55001a0",
-                            "label": "Wysiwyg",
-                            "name": "big_box__wysiwyg",
+                            "label": "Text Area",
+                            "name": "text_area",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -151,5 +151,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1512175346
+    "modified": 1512182142
 }

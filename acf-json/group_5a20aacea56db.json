@@ -1,11 +1,11 @@
 {
     "key": "group_5a20aacea56db",
-    "title": "Object-part: Wysiwyg",
+    "title": "Object-part: Text Area",
     "fields": [
         {
             "key": "field_5a20aad8271f6",
-            "label": "Wysiwyg",
-            "name": "wysiwyg",
+            "label": "Text Area",
+            "name": "text_area",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -44,5 +44,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1512090351
+    "modified": 1512181905
 }

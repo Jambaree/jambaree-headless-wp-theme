@@ -12,7 +12,7 @@
 
       <section class="big-box__content">
         <?php while( have_rows( 'big_box__content' ) ): the_row(); ?>
-          <?php include( get_row_layout() . '.php' ); ?>
+          <?php //include( get_row_layout() . '.php' ); ?>
         <?php endwhile; ?>
       </section>
 

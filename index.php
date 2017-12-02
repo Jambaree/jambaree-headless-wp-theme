@@ -8,7 +8,7 @@ get_header(); ?>
 
 <main class='main'>
 
-  <?php //include('page-objects/main-flexible-content.php'); ?>
+  <?php include('page-objects/main-flexible-content/main-flexible-content.php'); ?>
 
 </main>
 
