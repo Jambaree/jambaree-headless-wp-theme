@@ -20,30 +20,30 @@ Description: An Object oriented css theme starter
 // Import Vendor
 //
 @import "susy",
-				'vendor/normalize-new',
-				'vendor/hamburgers/hamburgers';
+				'site/base/normalize';
 
 
 //
 // Import Base
 //
-@import 'base/colors',
-				'base/typography',
-        'base/accessibility',
-        'base/extends',
-        'base/grid',
-				'base/page';
+@import 'site/base/colors',
+				'site/base/typography',
+        'site/base/accessibility',
+        'site/base/extends',
+        'site/base/grid',
+				'site/base/page';
 
 //
 // Import Objects
 //
-@import 'template-objects/menus/header-menu',
-				'template-objects/menus/hamburger',
-				'template-objects/menus/menu',
-				'template-objects/big-box',
-				'template-objects/text-area',
-				'template-objects/row-columns',
-				'template-objects/footer/footer';
+@import 'menus/header-menu/hamburgers/hamburgers',
+				'menus/header-menu/header-menu',
+				'menus/header-menu/hamburger',
+				'menus/header-menu/menu',
+				'big-box/big-box',
+				'text-area/text-area',
+				'row-columns/row-columns',
+				'footer/footer';
 
 
 //

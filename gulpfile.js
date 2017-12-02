@@ -10,7 +10,7 @@ var project                 = 'Bare Naked', // Project Name.
 //
 // Project directories
 //
-var styleWatchFiles         = 'sass/**/*.scss', // Path to all *.scss files inside css folder and inside them.
+var styleWatchFiles         = 'page-objects/**/*.scss', // Path to all *.scss files inside css folder and inside them.
     customJSWatchFiles      = 'js/*.js', // Path to all custom JS files.
     projectPHPWatchFiles    = '**/*.php'; // Path to all PHP files.
 
@@ -75,7 +75,7 @@ gulp.task( 'browser-sync', function() {
 //  scss transpilation and injection
 //
 gulp.task('sass', function () {
-  gulp.src('sass/**/*.scss')
+  gulp.src(styleWatchFiles)
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass(sass_config).on('error', sass.logError))
