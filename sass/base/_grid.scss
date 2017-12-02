@@ -11,4 +11,8 @@ $grid-edges-max-width: 1400px; // max width for large screens
     width: $grid-edges-width-after-breakpoint;
     max-width: $grid-edges-max-width;
   }
+
+  .grid-edges {
+    width: 100%;
+  }
 }

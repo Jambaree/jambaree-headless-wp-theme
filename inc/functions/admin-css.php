@@ -12,6 +12,16 @@ function my_custom_fonts() {
 		    border-top: none;
 		    border-color: rgba(240,245,250,.7);
 		}
+
+    .backend-row .backend-column {
+      border: 1px solid #515151;
+    }
+
+    .backend-row .backend-column::before {
+        content: "Column";
+        font-weight: bold;
+        font-size: 1.2em;
+    }
   </style>';
 }
 

@@ -1,7 +1,7 @@
 <section class="text-area--white-bg">
 
   <div class="grid-edges">
-    <?php include('wysiwyg.php'); ?>
+    <?php the_sub_field('wysiwyg'); ?>
   </div>
 
 </section>

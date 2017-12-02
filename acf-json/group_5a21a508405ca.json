@@ -1,6 +1,6 @@
 {
     "key": "group_5a21a508405ca",
-    "title": "Object: Rows \/ Columns",
+    "title": "Object: Row with columns",
     "fields": [
         {
             "key": "field_5a21a523d067e",
@@ -12,13 +12,13 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "",
+                "class": "backend-row",
                 "id": ""
             },
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "table",
+            "layout": "block",
             "button_label": "Add Column",
             "sub_fields": [
                 {
@@ -41,6 +41,33 @@
                     "layout": "block",
                     "prefix_label": 0,
                     "prefix_name": 0
+                },
+                {
+                    "key": "field_5a21f015bd420",
+                    "label": "Grow Ratio",
+                    "name": "size",
+                    "type": "select",
+                    "instructions": "Select the size ratio of this column to other columns",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "1": "1 (default)",
+                        "grow-2": "2",
+                        "grow-3": "3",
+                        "grow-4": "4"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
                 }
             ]
         }
@@ -67,5 +94,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1512157571
+    "modified": 1512175308
 }

@@ -11,6 +11,10 @@
     display: flex;
   }
 
+  &__content {
+    width: 100%;
+  }
+
   &--auto-height {
     @extend .big-box;
     min-height: 100px !important;

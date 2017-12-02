@@ -68,7 +68,7 @@
             "layouts": {
                 "5a20ab4d6864d": {
                     "key": "5a20ab4d6864d",
-                    "name": "wysiwyg",
+                    "name": "text_area",
                     "label": "Wysiwyg",
                     "display": "block",
                     "sub_fields": [
@@ -100,7 +100,7 @@
                 "5a21a5e109b93": {
                     "key": "5a21a5e109b93",
                     "name": "row_columns",
-                    "label": "Row \/ Columns",
+                    "label": "Row with columns",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -151,5 +151,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1512169073
+    "modified": 1512175346
 }

@@ -1,0 +1,106 @@
+.grid {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__column {
+    min-height: 100px;
+    border: 1px solid red;
+    width: 100%;
+  }
+}
+
+@for $i from 2 through 4 {
+  .grow-#{$i} {
+    flex-grow: $i !important;
+  }
+}
+
+// Two columns / Four Columns / Eight Columns
+@element '.grid__row' and (min-width: 600px) {
+  .grid {
+    &__column {
+      &:nth-last-child(2):first-child,
+      &:nth-last-child(2):first-child ~ .grid__column,
+      &:nth-last-child(4):first-child,
+      &:nth-last-child(4):first-child ~ .grid__column,
+      &:nth-last-child(8):first-child,
+      &:nth-last-child(8):first-child ~ .grid__column {
+        flex: 1;
+      }
+    }
+  }
+}
+
+// Three columns
+@element '.grid__row' and (min-width: 700px) {
+  .grid {
+    &__column {
+      &:nth-last-child(3):first-child,
+      &:nth-last-child(3):first-child ~ .grid__column {
+        flex: 1;
+      }
+    }
+  }
+}
+
+// Four columns
+@element '.grid__row' and (min-width: 900px) {
+  .grid {
+    &__column {
+      &:nth-last-child(4):first-child,
+      &:nth-last-child(4):first-child ~ .grid__column {
+        flex: 1;
+      }
+    }
+  }
+}
+
+// Five columns
+@element '.grid__row' and (min-width: 600px) {
+  .grid {
+    &__column {
+      &:nth-last-child(5):first-child,
+      &:nth-last-child(5):first-child ~ .grid__column {
+        flex: 1;
+      }
+    }
+  }
+}
+
+// Six columns
+@element '.grid__row' and (min-width: 600px) {
+  .grid {
+    &__column {
+      &:nth-last-child(6):first-child,
+      &:nth-last-child(6):first-child ~ .grid__column {
+        flex: 1;
+      }
+    }
+  }
+}
+
+// Seven columns
+@element '.grid__row' and (min-width: 600px) {
+  .grid {
+    &__column {
+      &:nth-last-child(7):first-child,
+      &:nth-last-child(7):first-child ~ .grid__column {
+        flex: 1;
+      }
+    }
+  }
+}
+
+// Eight columns
+@element '.grid__row' and (min-width: 600px) {
+  .grid {
+    &__column {
+      &:nth-last-child(8):first-child,
+      &:nth-last-child(8):first-child ~ .grid__column {
+        flex: 1;
+      }
+    }
+  }
+}

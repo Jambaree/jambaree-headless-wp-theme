@@ -34,7 +34,7 @@ Description: An Object oriented css theme starter
         'base/grid',
 				'base/page';
 
-
+$template-objects-root: '../template-objects/';
 //
 // Import Objects
 //
@@ -43,7 +43,9 @@ Description: An Object oriented css theme starter
 				'template-objects/menus/menu',
 				'template-objects/big-box',
 				'template-objects/text-area',
-				'template-objects/footer/footer';
+				'template-objects/row-columns',
+				'template-objects/footer/footer',
+				$template-objects-root + 'slider/slider';
 
 
 //
