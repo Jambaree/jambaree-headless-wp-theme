@@ -11,7 +11,7 @@ var project                 = 'Bare Naked', // Project Name.
 // Project directories
 //
 var styleWatchFiles         = 'page-objects/**/*.scss', // Path to all *.scss files inside css folder and inside them.
-    customJSWatchFiles      = 'js/*.js', // Path to all custom JS files.
+    customJSWatchFiles      = 'inc/js/*.js', // Path to all custom JS files.
     projectPHPWatchFiles    = '**/*.php'; // Path to all PHP files.
 
 
