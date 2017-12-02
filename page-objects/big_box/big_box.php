@@ -12,7 +12,8 @@
 
       <section class="big-box__content">
         <?php while( have_rows( 'big_box__content' ) ): the_row(); ?>
-          <?php //include( get_row_layout() . '.php' ); ?>
+          <?php $row_layout = get_row_layout(); ?>
+          <?php include( dirname(dirname(__FILE__)) .'/'. $row_layout .'/'. $row_layout .'.php' ); ?>
         <?php endwhile; ?>
       </section>
 
