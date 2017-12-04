@@ -3,14 +3,14 @@
 $args = array(
 
 	/* (string) The title displayed on the options page. Required. */
-	'page_title' => 'Theme Options',
+	'page_title' => 'Header & Footer',
 
 	/* (string) The title displayed in the wp-admin sidebar. Defaults to page_title */
-	'menu_title' => 'Theme Options',
+	'menu_title' => 'Header & Footer',
 
 	/* (string) The slug name to refer to this menu by (should be unique for this menu).
 	Defaults to a url friendly version of menu_slug */
-	'menu_slug' => 'theme-options',
+	'menu_slug' => 'header-footer-options',
 
 	/* (string) The capability required for this menu to be displayed to the user. Defaults to edit_posts.
 	Read more about capability here: http://codex.wordpress.org/Roles_and_Capabilities */
