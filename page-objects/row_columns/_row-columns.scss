@@ -1,3 +1,5 @@
+$gutter: 2%;
+
 .grid {
   &__row {
     display: flex;
@@ -6,7 +8,6 @@
 
   &__column {
     min-height: 100px;
-    border: 1px solid red;
     width: 100%;
   }
 }
@@ -29,6 +30,12 @@
       &:nth-last-child(8):first-child ~ .grid__column {
         flex: 1;
       }
+
+      margin-right: $gutter;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -40,6 +47,12 @@
       &:nth-last-child(3):first-child,
       &:nth-last-child(3):first-child ~ .grid__column {
         flex: 1;
+      }
+
+      margin-right: $gutter;
+
+      &:last-child {
+        margin-right: 0;
       }
     }
   }
@@ -53,6 +66,12 @@
       &:nth-last-child(4):first-child ~ .grid__column {
         flex: 1;
       }
+
+      margin-right: $gutter;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -64,6 +83,12 @@
       &:nth-last-child(5):first-child,
       &:nth-last-child(5):first-child ~ .grid__column {
         flex: 1;
+      }
+
+      margin-right: $gutter;
+
+      &:last-child {
+        margin-right: 0;
       }
     }
   }
@@ -77,6 +102,12 @@
       &:nth-last-child(6):first-child ~ .grid__column {
         flex: 1;
       }
+
+      margin-right: $gutter;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -89,6 +120,12 @@
       &:nth-last-child(7):first-child ~ .grid__column {
         flex: 1;
       }
+
+      margin-right: $gutter;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -100,6 +137,12 @@
       &:nth-last-child(8):first-child,
       &:nth-last-child(8):first-child ~ .grid__column {
         flex: 1;
+      }
+
+      margin-right: $gutter;
+
+      &:last-child {
+        margin-right: 0;
       }
     }
   }

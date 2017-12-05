@@ -581,7 +581,6 @@ img {
 
 .grid__column {
   min-height: 100px;
-  border: 1px solid red;
   width: 100%; }
 
 .grow-2 {
@@ -600,55 +599,83 @@ img {
           flex-grow: 4 !important; }
 
 @element '.grid__row' and (min-width: 600px) {
-  .grid__column:nth-last-child(2):first-child,
-  .grid__column:nth-last-child(2):first-child ~ .grid__column, .grid__column:nth-last-child(4):first-child,
-  .grid__column:nth-last-child(4):first-child ~ .grid__column, .grid__column:nth-last-child(8):first-child,
-  .grid__column:nth-last-child(8):first-child ~ .grid__column {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1; } }
+  .grid__column {
+    margin-right: 2%; }
+    .grid__column:nth-last-child(2):first-child,
+    .grid__column:nth-last-child(2):first-child ~ .grid__column, .grid__column:nth-last-child(4):first-child,
+    .grid__column:nth-last-child(4):first-child ~ .grid__column, .grid__column:nth-last-child(8):first-child,
+    .grid__column:nth-last-child(8):first-child ~ .grid__column {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+    .grid__column:last-child {
+      margin-right: 0; } }
 
 @element '.grid__row' and (min-width: 700px) {
-  .grid__column:nth-last-child(3):first-child,
-  .grid__column:nth-last-child(3):first-child ~ .grid__column {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1; } }
+  .grid__column {
+    margin-right: 2%; }
+    .grid__column:nth-last-child(3):first-child,
+    .grid__column:nth-last-child(3):first-child ~ .grid__column {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+    .grid__column:last-child {
+      margin-right: 0; } }
 
 @element '.grid__row' and (min-width: 900px) {
-  .grid__column:nth-last-child(4):first-child,
-  .grid__column:nth-last-child(4):first-child ~ .grid__column {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1; } }
+  .grid__column {
+    margin-right: 2%; }
+    .grid__column:nth-last-child(4):first-child,
+    .grid__column:nth-last-child(4):first-child ~ .grid__column {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+    .grid__column:last-child {
+      margin-right: 0; } }
 
 @element '.grid__row' and (min-width: 600px) {
-  .grid__column:nth-last-child(5):first-child,
-  .grid__column:nth-last-child(5):first-child ~ .grid__column {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1; } }
+  .grid__column {
+    margin-right: 2%; }
+    .grid__column:nth-last-child(5):first-child,
+    .grid__column:nth-last-child(5):first-child ~ .grid__column {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+    .grid__column:last-child {
+      margin-right: 0; } }
 
 @element '.grid__row' and (min-width: 600px) {
-  .grid__column:nth-last-child(6):first-child,
-  .grid__column:nth-last-child(6):first-child ~ .grid__column {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1; } }
+  .grid__column {
+    margin-right: 2%; }
+    .grid__column:nth-last-child(6):first-child,
+    .grid__column:nth-last-child(6):first-child ~ .grid__column {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+    .grid__column:last-child {
+      margin-right: 0; } }
 
 @element '.grid__row' and (min-width: 600px) {
-  .grid__column:nth-last-child(7):first-child,
-  .grid__column:nth-last-child(7):first-child ~ .grid__column {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1; } }
+  .grid__column {
+    margin-right: 2%; }
+    .grid__column:nth-last-child(7):first-child,
+    .grid__column:nth-last-child(7):first-child ~ .grid__column {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+    .grid__column:last-child {
+      margin-right: 0; } }
 
 @element '.grid__row' and (min-width: 600px) {
-  .grid__column:nth-last-child(8):first-child,
-  .grid__column:nth-last-child(8):first-child ~ .grid__column {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1; } }
+  .grid__column {
+    margin-right: 2%; }
+    .grid__column:nth-last-child(8):first-child,
+    .grid__column:nth-last-child(8):first-child ~ .grid__column {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+    .grid__column:last-child {
+      margin-right: 0; } }
 
 .site-footer {
   padding: 1rem;
