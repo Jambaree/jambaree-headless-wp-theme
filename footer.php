@@ -6,8 +6,23 @@
 
 		<footer class="site-footer">
 			<div class="grid-edges">
-				<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
-				<?php //get_template_part('modules/social', 'icons'); ?>
+				<div class="grid__row">
+
+					<?php if( get_field( 'footer_logo', 'option' ) ): ?>
+						<div class="grid__column">
+		          <img
+		          class='footer-menu__logo'
+		          src="<?php the_field( 'main_logo', 'option' ); ?>"
+		          alt="<?php bloginfo( 'name' ); ?> Logo"
+		          >
+						</div>
+	        <?php endif; ?>
+
+					<div class="grid__column">
+						<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
+					</div>
+
+				</div>
 			</div>
 
 			<section class="legal">
