@@ -1,7 +1,5 @@
-$footer-bg-color: $black;
-
 .site-footer {
-  padding: 1rem;
+  @extend .section--padding-top;
   background-color: $black;
   position: relative;
   overflow: hidden;
@@ -14,5 +12,9 @@ $footer-bg-color: $black;
     display: block;
     position: absolute;
     left: 0;
+  }
+
+  .grid__column {
+    min-height: 0;
   }
 }

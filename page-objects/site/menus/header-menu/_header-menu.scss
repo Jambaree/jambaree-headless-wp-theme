@@ -37,7 +37,7 @@ $header-menu-fontcolor: $white;
     z-index: 1;
 
     a {
-      font-size: 1.6em;
+      @extend .nav-item;
       padding: 1rem;
       display: block;
     }

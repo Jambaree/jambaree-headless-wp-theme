@@ -277,27 +277,37 @@ a, a:visited, a:active {
   margin-bottom: inherit; }
 
 h1, .h1 {
-  font-size: 4.8em;
+  font-size: 3.8em;
   color: #2F4C54;
   letter-spacing: -1px;
   line-height: 5.2rem; }
+  @media (min-width: 600px) {
+    h1, .h1 {
+      font-size: 4.8em; } }
 
 h2, .h2 {
-  font-size: 3.6em;
+  font-size: 3.2em;
   color: #2F4C54;
   letter-spacing: -0.25px;
   line-height: 4rem; }
+  @media (min-width: 600px) {
+    h2, .h2 {
+      font-size: 3.6em; } }
 
-h4, .h4 {
+h4, .h4,
+h5, .h5 {
   /* $295,000 CAD: */
-  font-size: 1.8em;
+  font-size: 1.6em;
   color: #009A66;
   letter-spacing: 2px;
   line-height: 2.6rem; }
+  @media (min-width: 600px) {
+    h4, .h4,
+    h5, .h5 {
+      font-size: 1.8em; } }
 
 h5, .h5 {
   /* 28’ Cutwater C-28: */
-  font-size: 1.8em;
   color: #00529B;
   letter-spacing: 0.5px;
   line-height: 2.8rem; }
@@ -320,15 +330,16 @@ p, .p {
   font-size: 1.6em;
   color: #2F4C54;
   letter-spacing: 0;
-  line-height: 2.8rem; }
-  p--light, .p--light {
+  line-height: 2.8rem;
+  max-width: 800px; }
+  p--light, .p--light, .legal__copyright, .legal__credit {
     /* 5776 Marine Drive We: */
     font-size: 1.4em;
     color: #FFFFFF;
     letter-spacing: 0.5px;
     line-height: 2rem; }
 
-.nav-item {
+.nav-item, .header-menu__menu a, .menu a {
   /* Our Marinas: */
   font-size: 1.4em;
   color: #FFFFFF;
@@ -419,7 +430,7 @@ p, .p {
 
 .section, .text-area, .text-area--white-bg {
   padding-bottom: 2rem; }
-  .section--padding-top {
+  .section--padding-top, .big-box--full-height, .main-flexible-content > .text-area, .main-flexible-content > .text-area--white-bg, .site-footer, .legal {
     padding: 2rem 0; }
 
 img {
@@ -530,7 +541,6 @@ img {
     list-style: none;
     z-index: 1; }
     .header-menu__menu a {
-      font-size: 1.6em;
       padding: 1rem;
       display: block; }
     @media (max-width: 499px) {
@@ -642,6 +652,9 @@ img {
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   background-color: #ffffff; }
+
+.menu ul {
+  list-style: none; }
 
 .big-box, .big-box--auto-height, .big-box--full-height, .big-box--min-half-height {
   background-size: cover;
@@ -782,7 +795,6 @@ img {
       margin-right: 0; } }
 
 .site-footer {
-  padding: 1rem;
   background-color: #3B3B3B;
   position: relative;
   overflow: hidden; }
@@ -794,5 +806,10 @@ img {
     display: block;
     position: absolute;
     left: 0; }
+  .site-footer .grid__column {
+    min-height: 0; }
+
+.legal {
+  padding-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

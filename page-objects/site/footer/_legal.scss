@@ -1,0 +1,12 @@
+.legal {
+  @extend .section--padding-top;
+  padding-bottom: 0;
+  &__copyright,
+  &__credit {
+    @extend .p--light;
+  }
+
+  &__credit {
+
+  }
+}
