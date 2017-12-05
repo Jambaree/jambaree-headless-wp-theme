@@ -110,6 +110,19 @@ $header-menu-fontcolor: $white;
           right: 0;
         }
       }
+
+      &:after {
+        content: url(inc/icons/material-design-icons/svg/chevron-down-white.svg);
+        color: white;
+        position: relative;
+        top: 6px;
+        margin-left: -10px;
+      }
+
+      a,
+      &:before {
+        display: inline-block;
+      }
     }
 
     &__menu {
@@ -136,6 +149,7 @@ $header-menu-fontcolor: $white;
 
         a {
           line-height: 1;
+          height: auto;
           color: $black;
           white-space: nowrap;
         }

@@ -469,6 +469,14 @@ img {
       pointer-events: all; }
     .header-menu .menu-item-has-children:last-child .sub-menu {
       right: 0; }
+    .header-menu .menu-item-has-children:after {
+      content: url(inc/icons/material-design-icons/svg/chevron-down-white.svg);
+      color: white;
+      position: relative;
+      top: 6px;
+      margin-left: -10px; }
+    .header-menu .menu-item-has-children a, .header-menu .menu-item-has-children:before {
+      display: inline-block; }
     .header-menu__menu {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -492,6 +500,7 @@ img {
         transition: .1s ease-out opacity; }
         .header-menu__menu .sub-menu a {
           line-height: 1;
+          height: auto;
           color: #3B3B3B;
           white-space: nowrap; }
     .header-menu .hamburger {
