@@ -593,7 +593,7 @@ img {
       .header-menu .highlight:first-child {
         margin-left: 0; }
       .header-menu .highlight:last-child {
-        margin-right: 0; }
+        margin-right: 1rem; }
     .header-menu .menu-item-has-children:hover .sub-menu {
       opacity: 1;
       pointer-events: all; }
@@ -715,7 +715,7 @@ img {
       -ms-flex-positive: 4 !important;
           flex-grow: 4 !important; }
 
-@element '.grid__row' and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .grid__column {
     margin-right: 2%; }
     .grid__column:nth-last-child(2):first-child,
@@ -728,7 +728,7 @@ img {
     .grid__column:last-child {
       margin-right: 0; } }
 
-@element '.grid__row' and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   .grid__column {
     margin-right: 2%; }
     .grid__column:nth-last-child(3):first-child,
@@ -739,7 +739,7 @@ img {
     .grid__column:last-child {
       margin-right: 0; } }
 
-@element '.grid__row' and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   .grid__column {
     margin-right: 2%; }
     .grid__column:nth-last-child(4):first-child,
@@ -750,7 +750,7 @@ img {
     .grid__column:last-child {
       margin-right: 0; } }
 
-@element '.grid__row' and (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .grid__column {
     margin-right: 2%; }
     .grid__column:nth-last-child(5):first-child,
@@ -761,7 +761,7 @@ img {
     .grid__column:last-child {
       margin-right: 0; } }
 
-@element '.grid__row' and (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .grid__column {
     margin-right: 2%; }
     .grid__column:nth-last-child(6):first-child,
@@ -772,7 +772,7 @@ img {
     .grid__column:last-child {
       margin-right: 0; } }
 
-@element '.grid__row' and (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .grid__column {
     margin-right: 2%; }
     .grid__column:nth-last-child(7):first-child,
@@ -783,7 +783,7 @@ img {
     .grid__column:last-child {
       margin-right: 0; } }
 
-@element '.grid__row' and (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .grid__column {
     margin-right: 2%; }
     .grid__column:nth-last-child(8):first-child,

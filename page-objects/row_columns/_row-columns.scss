@@ -18,8 +18,11 @@ $gutter: 2%;
   }
 }
 
+
+
+
 // Two columns / Four Columns / Eight Columns
-@element '.grid__row' and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .grid {
     &__column {
       &:nth-last-child(2):first-child,
@@ -41,7 +44,7 @@ $gutter: 2%;
 }
 
 // Three columns
-@element '.grid__row' and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   .grid {
     &__column {
       &:nth-last-child(3):first-child,
@@ -59,7 +62,7 @@ $gutter: 2%;
 }
 
 // Four columns
-@element '.grid__row' and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   .grid {
     &__column {
       &:nth-last-child(4):first-child,
@@ -77,7 +80,7 @@ $gutter: 2%;
 }
 
 // Five columns
-@element '.grid__row' and (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .grid {
     &__column {
       &:nth-last-child(5):first-child,
@@ -95,7 +98,7 @@ $gutter: 2%;
 }
 
 // Six columns
-@element '.grid__row' and (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .grid {
     &__column {
       &:nth-last-child(6):first-child,
@@ -113,7 +116,7 @@ $gutter: 2%;
 }
 
 // Seven columns
-@element '.grid__row' and (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .grid {
     &__column {
       &:nth-last-child(7):first-child,
@@ -131,7 +134,7 @@ $gutter: 2%;
 }
 
 // Eight columns
-@element '.grid__row' and (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .grid {
     &__column {
       &:nth-last-child(8):first-child,
@@ -147,3 +150,137 @@ $gutter: 2%;
     }
   }
 }
+
+
+
+//
+// EQCSS
+// // Two columns / Four Columns / Eight Columns
+// @element '.grid__row' and (min-width: 600px) {
+//   .grid {
+//     &__column {
+//       &:nth-last-child(2):first-child,
+//       &:nth-last-child(2):first-child ~ .grid__column,
+//       &:nth-last-child(4):first-child,
+//       &:nth-last-child(4):first-child ~ .grid__column,
+//       &:nth-last-child(8):first-child,
+//       &:nth-last-child(8):first-child ~ .grid__column {
+//         flex: 1;
+//       }
+//
+//       margin-right: $gutter;
+//
+//       &:last-child {
+//         margin-right: 0;
+//       }
+//     }
+//   }
+// }
+//
+// // Three columns
+// @element '.grid__row' and (min-width: 700px) {
+//   .grid {
+//     &__column {
+//       &:nth-last-child(3):first-child,
+//       &:nth-last-child(3):first-child ~ .grid__column {
+//         flex: 1;
+//       }
+//
+//       margin-right: $gutter;
+//
+//       &:last-child {
+//         margin-right: 0;
+//       }
+//     }
+//   }
+// }
+//
+// // Four columns
+// @element '.grid__row' and (min-width: 900px) {
+//   .grid {
+//     &__column {
+//       &:nth-last-child(4):first-child,
+//       &:nth-last-child(4):first-child ~ .grid__column {
+//         flex: 1;
+//       }
+//
+//       margin-right: $gutter;
+//
+//       &:last-child {
+//         margin-right: 0;
+//       }
+//     }
+//   }
+// }
+//
+// // Five columns
+// @element '.grid__row' and (min-width: 600px) {
+//   .grid {
+//     &__column {
+//       &:nth-last-child(5):first-child,
+//       &:nth-last-child(5):first-child ~ .grid__column {
+//         flex: 1;
+//       }
+//
+//       margin-right: $gutter;
+//
+//       &:last-child {
+//         margin-right: 0;
+//       }
+//     }
+//   }
+// }
+//
+// // Six columns
+// @element '.grid__row' and (min-width: 600px) {
+//   .grid {
+//     &__column {
+//       &:nth-last-child(6):first-child,
+//       &:nth-last-child(6):first-child ~ .grid__column {
+//         flex: 1;
+//       }
+//
+//       margin-right: $gutter;
+//
+//       &:last-child {
+//         margin-right: 0;
+//       }
+//     }
+//   }
+// }
+//
+// // Seven columns
+// @element '.grid__row' and (min-width: 600px) {
+//   .grid {
+//     &__column {
+//       &:nth-last-child(7):first-child,
+//       &:nth-last-child(7):first-child ~ .grid__column {
+//         flex: 1;
+//       }
+//
+//       margin-right: $gutter;
+//
+//       &:last-child {
+//         margin-right: 0;
+//       }
+//     }
+//   }
+// }
+//
+// // Eight columns
+// @element '.grid__row' and (min-width: 600px) {
+//   .grid {
+//     &__column {
+//       &:nth-last-child(8):first-child,
+//       &:nth-last-child(8):first-child ~ .grid__column {
+//         flex: 1;
+//       }
+//
+//       margin-right: $gutter;
+//
+//       &:last-child {
+//         margin-right: 0;
+//       }
+//     }
+//   }
+// }
