@@ -10,6 +10,14 @@ $header-menu-fontcolor: $white;
 .header-menu {
   background: $header-menu-bgcolor;
 
+  .highlight {
+    background-color: white;
+
+    a {
+      color: $black;
+    }
+  }
+
   &__edges {
     @extend .grid-edges;
     display: flex;
@@ -100,6 +108,17 @@ $header-menu-fontcolor: $white;
   }
 
   @media screen and (min-width: $header-menu-bp) {
+    .highlight {
+      margin: 0 2rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
 
     .menu-item-has-children {
       &:hover {

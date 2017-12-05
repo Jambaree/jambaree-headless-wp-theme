@@ -400,6 +400,10 @@ img {
 
 .header-menu {
   background: #3B3B3B; }
+  .header-menu .highlight {
+    background-color: white; }
+    .header-menu .highlight a {
+      color: #3B3B3B; }
   .header-menu__edges {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -466,6 +470,12 @@ img {
     .header-menu svg {
       display: none; } }
   @media screen and (min-width: 500px) {
+    .header-menu .highlight {
+      margin: 0 2rem; }
+      .header-menu .highlight:first-child {
+        margin-left: 0; }
+      .header-menu .highlight:last-child {
+        margin-right: 0; }
     .header-menu .menu-item-has-children:hover .sub-menu {
       opacity: 1;
       pointer-events: all; }
