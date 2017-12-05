@@ -127,6 +127,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5a25f7f59dc1c": {
+                    "key": "5a25f7f59dc1c",
+                    "name": "row_columns",
+                    "label": "Row with Columns",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a21a5f509b94",
+                            "label": "Rows \/ Columns",
+                            "name": "rows_columns_group",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a21a508405ca"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Content",
@@ -152,29 +183,7 @@
                     "name": "row_columns",
                     "label": "Rows with Columns",
                     "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5a21a5f509b94",
-                            "label": "Rows \/ Columns",
-                            "name": "rows_columns_group",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_5a21a508405ca"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
+                    "sub_fields": [],
                     "min": "",
                     "max": ""
                 }
@@ -206,5 +215,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1512437382
+    "modified": 1512438205
 }

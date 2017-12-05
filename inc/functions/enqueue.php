@@ -2,7 +2,7 @@
 
 function bareNakedEnqueue() {
   $stylesheet_directory_uri = get_stylesheet_directory_uri();
-  
+
   wp_enqueue_style( 'styles', get_stylesheet_uri() );
 
   wp_enqueue_script( 'jquery' );

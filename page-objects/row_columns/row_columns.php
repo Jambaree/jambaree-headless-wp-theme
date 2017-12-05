@@ -3,7 +3,7 @@
 
     <?php while( have_rows( 'row' ) ): the_row(); ?>
       <div class="grid__column <?php the_sub_field('size'); ?>">
-        <?php //include(dirname(dirname(__FILE__)) . '/flexible-content/main-flexible-content.php'); ?>
+        <?php include(dirname(dirname(__FILE__)) . '/flexible-content/nested-flexible-content.php'); ?>
       </div>
     <?php endwhile; ?>
 
