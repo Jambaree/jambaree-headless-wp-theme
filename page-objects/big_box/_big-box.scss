@@ -33,7 +33,7 @@
 
 @media screen and (min-width: $header-menu-bp) {
   .main-flexible-content {
-    .big-box {
+    .big-box--full-height {
       &:first-child {
         min-height: calc(100vh - #{$header-menu-height});
       }

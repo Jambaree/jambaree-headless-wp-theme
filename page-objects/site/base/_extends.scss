@@ -8,6 +8,10 @@
 .bg-overlay {
   position: relative;
 
+  > * {
+    position: relative;
+  }
+
   &:before {
     content: '';
     position: absolute;
