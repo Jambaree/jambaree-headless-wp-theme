@@ -22,6 +22,10 @@ function my_custom_fonts() {
         font-weight: bold;
         font-size: 1.2em;
     }
+
+    .hidden {
+      display: none;
+    }
   </style>';
 }
 

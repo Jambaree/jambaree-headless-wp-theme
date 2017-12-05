@@ -11,12 +11,12 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "return_format": "url",
-            "preview_size": "thumbnail",
+            "preview_size": "medium",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -35,7 +35,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -127,11 +127,30 @@
                     ],
                     "min": "",
                     "max": ""
-                },
-                "5a21a5e109b93": {
-                    "key": "5a21a5e109b93",
+                }
+            },
+            "button_label": "Add Content",
+            "min": "",
+            "max": ""
+        },
+        {
+            "key": "field_5a25f608a7bdf",
+            "label": "Deactivated flex",
+            "name": "deactivated_flex",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "layouts": {
+                "5a25f611ed61e": {
+                    "key": "5a25f611ed61e",
                     "name": "row_columns",
-                    "label": "Row with columns",
+                    "label": "Rows with Columns",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -160,7 +179,7 @@
                     "max": ""
                 }
             },
-            "button_label": "Add Content",
+            "button_label": "Add Row",
             "min": "",
             "max": ""
         }
@@ -170,6 +189,11 @@
             {
                 "param": "post_type",
                 "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
                 "value": "post"
             }
         ]
@@ -182,5 +206,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1512435808
+    "modified": 1512437382
 }
