@@ -27,7 +27,8 @@
       <?php wp_nav_menu(
                 array(
                 'theme_location' => 'main',
-                'menu_class' => 'header-menu__menu'
+                'menu_class' => 'header-menu__menu',
+                'walker' => new mainMenu_walker
               )
             ); ?>
     </nav>

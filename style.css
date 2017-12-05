@@ -462,20 +462,23 @@ img {
   @media screen and (max-width: 499px) {
     .header-menu .sub-menu {
       padding-left: 10px;
-      padding-bottom: 1em; } }
+      padding-bottom: 1em; }
+    .header-menu svg {
+      display: none; } }
   @media screen and (min-width: 500px) {
     .header-menu .menu-item-has-children:hover .sub-menu {
       opacity: 1;
       pointer-events: all; }
     .header-menu .menu-item-has-children:last-child .sub-menu {
       right: 0; }
-    .header-menu .menu-item-has-children:after {
-      content: url(inc/icons/material-design-icons/svg/chevron-down-white.svg);
-      color: white;
+    .header-menu .menu-item-has-children svg {
       position: relative;
       top: 6px;
       margin-left: -10px; }
-    .header-menu .menu-item-has-children a, .header-menu .menu-item-has-children:before {
+      .header-menu .menu-item-has-children svg path {
+        fill: white; }
+    .header-menu .menu-item-has-children a,
+    .header-menu .menu-item-has-children svg {
       display: inline-block; }
     .header-menu__menu {
       display: -webkit-box;

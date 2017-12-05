@@ -93,6 +93,10 @@ $header-menu-fontcolor: $white;
       padding-left: 10px;
       padding-bottom: 1em;
     }
+
+    svg {
+      display: none;
+    }
   }
 
   @media screen and (min-width: $header-menu-bp) {
@@ -111,16 +115,18 @@ $header-menu-fontcolor: $white;
         }
       }
 
-      &:after {
-        content: url(inc/icons/material-design-icons/svg/chevron-down-white.svg);
-        color: white;
+      svg {
         position: relative;
         top: 6px;
         margin-left: -10px;
+
+        path {
+          fill: white;
+        }
       }
 
       a,
-      &:before {
+      svg {
         display: inline-block;
       }
     }
