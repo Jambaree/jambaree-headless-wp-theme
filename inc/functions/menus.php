@@ -1,4 +1,5 @@
 <?php
+// 
 //Add icon after menu items which have children and are top level.
 class mainMenu_walker extends Walker_Nav_Menu {
 
@@ -11,6 +12,8 @@ class mainMenu_walker extends Walker_Nav_Menu {
   }
 }
 
+//
+// Register theme menus
 function bareNakedMenus() {
   register_nav_menus( array(
     'main' => 'Main Menu',
