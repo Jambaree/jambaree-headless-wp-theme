@@ -1,10 +1,16 @@
 .text-area {
   @extend .section;
-  
+
   &--white-bg {
     @extend .text-area;
     * {
       color: $black;
     }
+  }
+}
+
+.main-flexible-content {
+  > .text-area {
+    @extend .section--padding-top;
   }
 }

@@ -22,6 +22,7 @@
 
   &--full-height {
     @extend .big-box;
+    @extend .section--padding-top;
     min-height: 100vh;
   }
 
