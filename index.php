@@ -1,16 +1,15 @@
 <?php
-// Bare Naked
-// Generic Index Page
+/**
+ * The main template file.
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Jambaree Headless Theme
+ * @author Jambaree - www.jambaree.com
+ */
 
-get_header(); ?>
-
-</header>
-
-<main class='main'>
-
-  <?php include('page-objects/flexible-content/main-flexible-content.php'); ?>
-
-</main>
-
-<?php
-get_footer();
+?>

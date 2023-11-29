@@ -14,5 +14,3 @@
 </head>
 
 <body <?php body_class(); ?>>
-
-	<?php include('page-objects/site/menus/header-menu/header-menu.php'); ?>
