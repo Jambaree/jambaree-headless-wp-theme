@@ -1,6 +1,6 @@
 <?php
 
-add_action( 'tgmpa_register', 'bare_naked_theme_register_required_plugins' );
+add_action( 'tgmpa_register', 'jambaree_headless_theme_register_required_plugins' );
 
 /**
  * Register the required plugins for this theme.
@@ -19,52 +19,57 @@ add_action( 'tgmpa_register', 'bare_naked_theme_register_required_plugins' );
  *
  * This function is hooked into `tgmpa_register`, which is fired on the WP `init` action on priority 10.
  */
-function bare_naked_theme_register_required_plugins() {
+function jambaree_headless_theme_register_required_plugins() {
 	/*
 	 * Array of plugin arrays. Required keys are name and slug.
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
 	$plugins = array(
-
+		// https://github.com/CalebBarnes/custom-templates-creator
 		// This is an example of how to include a plugin bundled with a theme.
+
+		// array(
+		// 	'name'               => 'TGM Example Plugin', // The plugin name.
+		// 	'slug'               => 'tgm-example-plugin', // The plugin slug (typically the folder name).
+		// 	'source'             => get_template_directory() . '/lib/plugins/tgm-example-plugin.zip', // The plugin source.
+		// 	'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+		// 	'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+		// 	'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+		// 	'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+		// 	'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+		// 	'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+		// ),
+
 		array(
-			'name'               => 'TGM Example Plugin', // The plugin name.
-			'slug'               => 'tgm-example-plugin', // The plugin slug (typically the folder name).
-			'source'             => get_template_directory() . '/lib/plugins/tgm-example-plugin.zip', // The plugin source.
-			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
-			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
-			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
-			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
-			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+			'name'      => 'Jambaree Headless Wordpress - Next.js Utilities',
+			'slug'      => 'jambaree-next-wp-plugin',
+			'source'    => 'https://github.com/Jambaree/jambaree-next-wp-plugin/archive/main.zip',
+      		'required'     => true
 		),
 
-		// This is an example of how to include a plugin from an arbitrary external source in your theme.
-    /*
-    array(
-			'name'         => 'TGM New Media Plugin', // The plugin name.
-			'slug'         => 'tgm-new-media-plugin', // The plugin slug (typically the folder name).
-			'source'       => 'https://s3.amazonaws.com/tgm/tgm-new-media-plugin.zip', // The plugin source.
-			'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
+		array(
+			'name'      => 'Custom Templates Creator',
+			'slug'      => 'custom-templates-creator',
+			'source'    => 'https://github.com/CalebBarnes/custom-templates-creator/archive/main.zip',
+      		'required'     => false
 		),
-    */
 
-		// This is an example of how to include a plugin from a GitHub repository in your theme.
-		// This presumes that the plugin code is based in the root of the GitHub repository
-		// and not in a subdirectory ('/src') of the repository.
 		array(
 			'name'      => 'Advanced Custom Fields Pro',
 			'slug'      => 'advanced-custom-fields-pro',
-			'source'    => 'https://github.com/wp-premium/advanced-custom-fields-pro',
-      'required'     => true
+			'source'    => 'https://github.com/pronamic/advanced-custom-fields-pro/archive/main.zip',
+      		'required'     => false
 		),
 
-		// This is an example of how to include a plugin from the WordPress Plugin Repository.
 		array(
-			'name'      => 'Revisr',
-			'slug'      => 'revisr',
-			'required'  => false,
+			'name'      => 'Next.js On-Demand Revalidation',
+			'slug'      => 'on-demand-revalidation',
+      		'required'     => false
+		),
+		array(
+			'name'      => 'Classic Editor',
+			'slug'      => 'classic-editor',
+      		'required'     => false
 		),
 
 		// This is an example of the use of 'is_callable' functionality. A user could - for instance -
@@ -74,11 +79,18 @@ function bare_naked_theme_register_required_plugins() {
 		// `array( 'class', 'method' )` similar to how you hook in to actions and filters, TGMPA can still
 		// recognize the plugin as being installed.
 		array(
-			'name'        => 'WordPress SEO by Yoast',
+			'name'        => 'Gravity Forms',
+			'slug'        => 'gravityforms',
+			'source'      => get_template_directory() . '/lib/plugins/gravityforms_2.7.17.1.zip',
+			'is_callable' => 'gform_loaded',
+			'required'	  => false
+		),
+		array(
+			'name'        => 'Yoast SEO',
 			'slug'        => 'wordpress-seo',
 			'is_callable' => 'wpseo_init',
+			'required'	  => false
 		),
-
 	);
 
 	/*
@@ -91,7 +103,7 @@ function bare_naked_theme_register_required_plugins() {
 	 * Only uncomment the strings in the config array if you want to customize the strings.
 	 */
 	$config = array(
-		'id'           => 'bare-naked-theme',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+		'id'           => 'jambaree-headless-theme',                 // Unique ID for hashing notices for multiple instances of TGMPA.
 		'default_path' => '',                      // Default absolute path to bundled plugins.
 		'menu'         => 'tgmpa-install-plugins', // Menu slug.
 		'parent_slug'  => 'themes.php',            // Parent menu slug.
