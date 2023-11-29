@@ -62,6 +62,11 @@ function jambaree_headless_theme_register_required_plugins() {
 		),
 
 		array(
+			'name'      => 'JAMstack Deployments',
+			'slug'      => 'wp-jamstack-deployments',
+      		'required'     => false
+		),
+		array(
 			'name'      => 'Next.js On-Demand Revalidation',
 			'slug'      => 'on-demand-revalidation',
       		'required'     => false
